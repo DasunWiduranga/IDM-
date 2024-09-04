@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\BatchController;
+use App\Http\Controllers\AuditController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +25,5 @@ Route::post('/students/assign', [StudentController::class, 'assign'])->name('stu
 
 Route::get('/batches/create', [BatchController::class, 'create'])->name('batches.create');
 Route::post('/batches', [BatchController::class, 'store'])->name('batches.store');
+
+Route::get('/audits', [AuditController::class, 'index'])->name('audits.index');

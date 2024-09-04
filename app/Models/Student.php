@@ -14,9 +14,9 @@ class Student extends Model implements Auditable
     protected $fillable = [
         'name',
         'email',
+        'batch_id',
         'batch_label',
     ];
-
     /**
      * Define the relationship with the Batch model.
      * Assuming a student belongs to a batch.
